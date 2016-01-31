@@ -9,31 +9,15 @@
 <body>
   
   <!-- header-->
-
-  <header class="navbar navbar-fixed-top navbar-default">
-    <div class="container">
-      <%=link_to "myRecipes", "", class: "btn btn-lg btn-success", id:"logo" %>
-      <div class="nav-item">
-        <%=link_to "link1", "", class:"btn btn-default btn-warning"%>
-      </div>
-      <div class="nav-item">
-        <%=link_to "link1", "", class:"btn btn-default btn-warning"%>
-      </div>
-      <div class="nav-item">
-        <%=link_to "link1", "", class:"btn btn-default btn-warning"%>
-      </div>
-      
-    </div>
-  </header>
+  <%= render 'layouts/navigation' %>
+  
   
   <!-- content -->
   <div class="container">
     <%= yield %>
     
     <!-- footer -->
-    <div class="footer">
-        <p>&copy; My recipes 2016 </p>
-    </div>
+    <%= render 'layouts/footer' %>
   </div>
 
   
