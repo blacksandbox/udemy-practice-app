@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get "/home", to: "pages#home"
   
-  
+  resources :recipes
   
   
   # You can have the root of your site routed with "root"
